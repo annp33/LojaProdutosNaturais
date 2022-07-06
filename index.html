@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Loja de Produtos Naturais</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Vitashop com o nome da loja abaixo de uma planta com três folhas verdes"></a>
+        </div>
+        <form action="" method="POST" id="pesquisa" method="POST">
+            <input type="search" name="" id="barraPesquisa" title="barraPesquisa">
+            <button type="submit" id="botaoPesquisa"><img src="img/lupa.png" width="" alt="Lupa"></button>
+        </form>
+
+        <div id="login">
+            <a href="#"><img src="img/login.png" width="" alt="Avatar de login"></a>        
+            <a href="#" id="textoLogin">Entre ou Cadastre-se</a>
+        </div>
+
+        <div id="carrinho">
+            <a href="#"><img src="img/carrinho.png" width="" alt="Carrinho de supermercado"></a>
+        </div>
+
+        <button class="botaoMenu" type="button" title="botaoMenu"><img class="menu" src="img/menu.png" alt=""></button>    
+ 
+        <nav id="navMobile" >
+            <div class="menuMobile">
+                <div><a href="#">Alimentos</a></div>
+                <div><a href="#">Bebidas</a></div>
+                <div><a href="#">Chás</a></div>
+                <div><a href="#">Orgânicos</a></div>
+                <div><a href="#">Suplementos</a></div>
+                <div><a href="#">Higiene e Limpeza</a></div>
+                <div><a href="#">Outros</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <nav id="navDesktop">
+        <div class="menuDesktop">
+            <div><a href="#">Alimentos</a></div>
+            <div><a href="#">Bebidas</a></div>
+            <div><a href="#">Chás</a></div>
+            <div><a href="#">Orgânicos</a></div>
+            <div><a href="#">Suplementos</a></div>
+            <div><a href="#">Higiene e Limpeza</a></div>
+            <div><a href="#">Outros</a></div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="img/banner1.png" alt="Queijo vegetal parcialmente cortado em cubinhos sobre uma tábua de madeira" width="100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="img/banner2.png" alt="Potinhos redondos vistos de cima, contendo diferentes tipos de sementes e oleaginosas" width="100%">
+            </div>
+          
+            <div class="mySlides">
+              <img src="img/banner3.png" alt="Saco de juta contendo castanhas de caju, próximo a um copo de vidro transparente contendo leite vegetal" width="100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>        
+            
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <section id="newsletter"> 
+            <div>
+                <img src="img/email.png" width="82px" alt="Envelope aberto contendo um folha de papel parcialmente visível">
+                <p>Cadastre-se para não perder nenhuma promoção da VitaShop!</p>
+            </div>
+
+            <form action="pagina_de_confirmacao.html" method="POST" id="formularioNewsletter" name="formulario" onsubmit="return validaFormulario(this)">
+                <div id="linha1">
+                    <span class="mensagemErroNome"></span> 
+                    <label for="nome">Nome:</label><input type="text" name="nome" id="nome">
+                    <label for="celular">Celular:</label><input type="text" name="celular" id="celular">
+                </div>
+                <div id="linha2">
+                    <span class="mensagemErroEmail"></span> 
+                    <label for="email">E-mail:</label><input type="text" name="email" id="email">
+                    <button type="submit" id="botao2" >Enviar</button>
+                </div> 
+            </form>
+        </section>
+
+        <section class="produtos">
+            <div class="produto">
+                <a href="#"><img src="img/biscoito_integral.jpg" height="175px" alt="Pacote de biscoito integral"></a>
+                <p>Biscoito Integral</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <a href="#"><img src="img/castanha_para.png" height="175px" alt="Pacote de castanha do Pará"></a>
+                <p>Castanha do Pará</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <a href="#"><img src="img/manteiga_vegetal.png" height="175px" alt="Pote de manteiga vegetal"></a>
+                <p>Manteiga Vegetal</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <a href="#"><img src="img/proteina_soja.jpeg" height="175px" alt="Pacote de proteína de soja"></a>
+                <p>Proteína de Soja</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+
+        </section>
+
+        <section class="produtos">
+            <div class="produto">
+                <a href="#"><img src="img/creme_dental.jpg" height="175px" alt="Bisnaga de creme dental sobre sua respectiva embalagem em formatom de caixa"></a>
+                <p>Creme Dental</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+
+            <div class="produto">
+                <a href="#"><img src="img/oleo_coco.jpg" height="175px" alt="Pote de óleo de coco"></a>
+                <p>Óleo de Coco</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <a href="#"><img src="img/leite_amendoas.jpg" height="175px" alt="Caixa de leite de amêndoa"></a>
+                <p>Leite de Amêndoa</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+            <div class="produto">
+                <a href="#"><img src="img/queijo_vegetal.png" height="175px" alt="Queijo vegetal redondo"></a>
+                <p>Queijo Vegetal</p>
+                <h2>R$ 0,00</h2>
+                <button><a href="#">Comprar</a></button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="footer1">
+            <div class="coluna0">
+                <a href="index.html"><img src="img/logo2.png" width="" alt="Logo Vitashop com o nome da loja abaixo de uma planta com três folhas verdes"> </a>          
+            </div>
+
+            <div class="coluna1">
+                <strong><p>Matriz</p></strong>
+                <p>Rua ABCD, 11</p>
+                <p>Jardim do Mar</p>
+                <p>São Bernardo do Campo/SP</p>                
+            </div>
+
+            <div class="coluna2">
+                <strong><p>Saiba Mais</p></strong>
+                <a href="#"><p>Quem Somos</p></a>
+                <a href="#"><p>Nossas Unidades</p></a>
+                <a href="#"><p>Fale Conosco</p></a>
+            </div>
+
+            <div class="coluna3">
+                <strong><p>Políticas</p></strong>
+                <a href="#"><p>Termos e Condições</p></a>
+                <a href="#"><p>Privacidade</p></a>
+                <a href="#"><p>Pagamento e Entrega</p></a>
+            </div>
+            <div class="coluna4">
+                <p>Redes Sociais</p>
+                <a href="#"><img src="img/facebook.png" width="50px" alt="Logo facebook"></a>
+                <a href="#"><img src="img/instagram.png" width="50px" alt="Logo Instagram"></a>
+                <a href="#"><img src="img/whatsapp.png" width="50px" alt="Logo WhatsApp"></a>
+            </div>
+        </section> 
+        
+        <section id="footer2">
+            <div id="rodape">
+            <p>&copy VitaShop - Desenvolvido por Ana Irineu</p>
+            </div>
+        </section>
+    </footer>
+
+    <script lang="text/javascript" src="javascript.js"></script>
+
+</body>
+</html>
