@@ -147,8 +147,8 @@ header{
         display: inline;
         position: relative;     
         bottom: -10px;  
-        margin-right: 10px;         
-        padding-left: 10px;
+        margin-right: 5px;         
+        padding-left: 5px;
     }
 
     #login img{
@@ -175,7 +175,7 @@ header{
 
     .botaoMenu{
         display: inline;
-        margin-left: 10px;
+        margin-left: 5px;
         position: relative;     
         bottom: -10px;   
     }
@@ -186,6 +186,25 @@ header{
         cursor: pointer;
         margin-right: 0px;
     }
+
+    .botaoMenu img{
+        max-width: 36px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    header{
+        text-align: right;
+    }
+
+    .botaoMenu, #carrinho, #login{
+        bottom: 0px;
+    }
+
+    #pesquisa{
+        width: 100%;
+        padding-right: 5px;
+    }    
 }
 
 /*********** FIM HEADER **********/
@@ -326,6 +345,12 @@ header{
 
 .active, .dot:hover{
     background-color: #717171;
+}
+
+@media screen and (max-width: 768px){
+    .prev, .next{
+        display: none;
+    }
 }
 
 
@@ -609,4 +634,6 @@ footer{
 }
 
 /************** FIM PÁGINA DE CONFIRMAÇÃO ***************/
+
+
 
