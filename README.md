@@ -1,2 +1,2 @@
 Projeto desenvolvido em HTML, CSS e Javascript puros.
-https://anairineu.tech/vitashop/
+https://annp33.github.io/LojaProdutosNaturais/
