@@ -128,7 +128,7 @@ header{
     display: none;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
     header{
         display: block;
         text-align: center;
@@ -473,7 +473,7 @@ span{ /* modifica o estilo das MENSAGENS DE ERRO do formulário */
     border-color: var(--cor5);
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
     #nome{
         width: 100%;
         margin-left: 0px;
